@@ -4,8 +4,9 @@
 	var losses = 0;
 	var colorsArray = ["red", "blue", "green"];
 	var guesses = 8;
+	var currentWord = "";
 
-	// Red Variables
+	// Red Variables]
 		var red0 = "_ ";
 		var red1 = "_ ";
 		var red2 = "_";
@@ -47,7 +48,7 @@
 		var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
 		console.log(userGuess);
 
-		if (currentWord == colorsArray[0]) {
+		if (currentWord == "red") {
 			if (userGuess == "r") {
 				var red0 = "r";
 			}
