@@ -5,12 +5,20 @@
 	var colorsArray = ["red", "blue", "green"];
 	var guesses = 9;
 	var currentWord = "";
+	var joinLetters = {
+		joinWord: function (arr) { 
+		arr.letters.join();
+		}
+	}
 	var displayWord = "";
 	var letterBank = [];
 	var letterPrint = letterBank.join();
 	var selectedLetter = "";
 
 	// Red Variables]
+	var red = {
+		letters: ["_ ", "_ ", "_ "],
+	}
 		var red0 = "_ ";
 		var red1 = "_ ";
 		var red2 = "_";
@@ -62,7 +70,6 @@
 		console.log(userGuess);
 
 		if (currentWord == "red") {
-			displayWord = redWord;
 			if (userGuess == "r") {
 				red0 = "r";
 				redWord = red0 + red1 + red2;
@@ -93,12 +100,12 @@
 					} 
 				chooseWord();
 			}
+			displayWord = redWord;
 			console.log(redWord);
 			console.log(guesses);
 		}
 
 		if (currentWord == "blue") {
-			displayWord = blueWord;
 			if (userGuess == "b") {
 				blue0 = "b";
 				blueWord = blue0 + blue1 + blue2 + blue3;
@@ -133,12 +140,12 @@
 				} 
 				chooseWord();
 			}
+			displayWord = blueWord;
 			console.log(blueWord);
 			console.log(guesses);
 		}
 
 		if (currentWord == "green") {
-			displayWord = greenWord;
 			if (userGuess == "g") {
 				green0 = "g";
 				greenWord = green0 + green1 + green2 + green3 + green4;
@@ -174,6 +181,7 @@
 				} 
 				chooseWord();
 			}
+			displayWord = greenWord;
 			console.log(greenWord);
 			console.log(guesses);
 		}

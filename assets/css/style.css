@@ -1,0 +1,17 @@
+body {
+	background-image: url("https://previews.123rf.com/images/hakkiarslan/hakkiarslan1402/hakkiarslan140200033/26030362-Abstract-colorful-background-Splash-watercolor-background-illustration-Stock-Vector.jpg");
+	margin: 0px;
+}
+
+.img-responsive {
+	margin: 0 auto;
+}
+
+.section {
+	border: solid;
+	border-width: 8px;
+	border-color: #ddd;
+	background-color: #fff;
+	margin-bottom: 25px;
+	padding: 10px;
+}
