@@ -5,11 +5,6 @@
 	var colorsArray = ["red", "blue", "green"];
 	var guesses = 9;
 	var currentWord = "";
-	var joinLetters = {
-		joinWord: function (arr) { 
-		arr.letters.join();
-		}
-	}
 	var displayWord = "";
 	var letterBank = [];
 	var letterPrint = letterBank.join();
@@ -59,6 +54,10 @@
 	function letterCache () {
 		selectedLetter = String.fromCharCode(event.keyCode).toLowerCase();
 		letterBank.push(selectedLetter);
+	}
+
+	function joinWord (arr) { 
+		arr.letters.join("");
 	}
 
 // Running Code
