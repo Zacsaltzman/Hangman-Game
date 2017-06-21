@@ -12,7 +12,7 @@
 
 	// Red Variables]
 	var red = {
-		letters: ["_ ", "_ ", "_ "],
+		letters: ["_", "_", "_"],
 	}
 		var red0 = "_ ";
 		var red1 = "_ ";
@@ -57,7 +57,7 @@
 	}
 
 	function joinWord (arr) { 
-		arr.letters.join("");
+		arr.letters.join(" ");
 	}
 
 // Running Code
