@@ -185,7 +185,7 @@
 			console.log(guesses);
 		}
 
-		var html = "<p>Press any letter to begin game</p>" + 
+		var html = "<p>Press any letter!</p>" + 
 		"<p>Wins: " + wins + "</p>" + 
 		"<p>Losses: " + losses + "</p>" + 
 		"<p> Current Word: " + "</p>" + 
