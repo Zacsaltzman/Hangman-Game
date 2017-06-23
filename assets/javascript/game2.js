@@ -66,15 +66,20 @@ document.onkeyup = function (event) {
 		}
 	}
 	else {
-		guesses--;
-		letterBank.push(userGuess);
-		console.log(letterBank);
-		usedLetters = letterBank.join(" ");
-		console.log("Wrong Letter");
-		if (guesses < 0) {
-			losses++;
-			guesses = 9;
-			chooseWord();
+		if (letterBank.indexOf(userGuess) > -1) {
+			console.log(userGuess);
+		}
+		else {
+			guesses--;
+			letterBank.push(userGuess);
+			console.log(letterBank);
+			usedLetters = letterBank.join(" ");
+			console.log("Wrong Letter");
+			if (guesses < 0) {
+				losses++;
+				guesses = 9;
+				chooseWord();
+			}
 		}
 	}
 
