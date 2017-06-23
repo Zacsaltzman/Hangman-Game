@@ -11,6 +11,7 @@
 	var drawWord = "";
 	var storedGuess = [];
 	var usedLetters = "";
+	var letterChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 // Functions
 
@@ -66,7 +67,10 @@ document.onkeyup = function (event) {
 		}
 	}
 	else {
-		if (letterBank.indexOf(userGuess) > -1) {
+		if (letterChoices.indexOf(userGuess) < 0) {
+			console.log(userGuess);
+		}
+		else if (letterBank.indexOf(userGuess) > -1) {
 			console.log(userGuess);
 		}
 		else {
